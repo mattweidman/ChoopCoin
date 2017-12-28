@@ -39,5 +39,5 @@ int main(int argc, char* argv[])
     exit(1);
   }
   std::string contents = getFileContents(argv[1]);
-  std::cout << Sha256::sha256Hash(contents) << std::endl;
+  std::cout << Sha256::hash(contents) << std::endl;
 }

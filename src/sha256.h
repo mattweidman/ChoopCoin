@@ -8,7 +8,7 @@ namespace Sha256 {
   /**
    * Takes the SHA-256 hash of a string.
    */
-  std::string sha256Hash(std::string data);
+  std::string hash(std::string data);
   
 }
 
