@@ -24,6 +24,12 @@ class UTXO : Serializable {
      */
     UTXO(std::string user, double denom);
 
+    /** Get public key */
+    std::string getKey();
+
+    /** Get denomination */
+    double getDenomination();
+
     /**
      * Convert to string containing public key and
      * denomination.

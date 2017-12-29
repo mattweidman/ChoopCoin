@@ -9,6 +9,14 @@ UTXO::UTXO(std::string user, double denom) {
   denomination = denom;
 }
 
+std::string UTXO::getKey() {
+  return key;
+}
+
+double UTXO::getDenomination() {
+  return denomination;
+}
+
 std::string UTXO::serialize() {
   std::ostringstream oss;
   oss << denomination;
