@@ -1,3 +1,7 @@
-compile:
-	g++ -c ../src/sha256.cpp ../src/hashTester.cpp
-	g++ -o sha256 sha256.o hashTester.o
+crypto:
+	g++ -std=c++11 -c ../src/crypto/sha256.cpp ../src/crypto/hashtests.cpp 
+	g++ -o sha256 sha256.o hashtests.o
+
+transaction:
+	g++ -std=c++11 -c ../src/transaction/utxo.cpp ../src/transaction/txntests.cpp 
+	g++ -o txn utxo.o txntests.o

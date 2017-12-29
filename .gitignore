@@ -1,2 +1,4 @@
 *.o
-build/sha256
+build/*
+!build/Makefile
+.vscode/*
